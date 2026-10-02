@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Width=device-width,initial-scale=1.0">
+    <title>East Medinipur Durga Puja</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff8f5;
+            color: #29275f;
+        }
+
+        .navbar {
+            background: #ffffff;
+            padding: 12px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h2 {
+            color: #29275f;
+            font-family: Georgia, serif;
+        }
+
+        .menu {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: #29275f;
+            font-size: 14px;
+        }
+
+        .menu li a:hover {
+            color: #d45b91;
+        }
+
+        .wish {
+            background: linear-gradient(120deg, #cceaff, #fbdce9, #ffe8cb);
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .wish h3 {
+            color: #a54882;
+            font-size: 20px;
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+        }
+        .wish h3:hover {
+            color: #d45b91;
+            font-size:25px;
+            cursor: pointer;
+            transition:1s;
+        }
+        
+
+        .wish h1 {
+            font-family: Georgia, serif;
+            font-size: 50px;
+            color: #29275f;
+        }
+        .wish h1:hover{
+            color: #d45b91;
+            font-size:30px;
+            cursor: pointer;
+            transition:1s;
+        }
+
+        .wish h2 {
+            color: #d43d83;
+            font-family: Georgia, serif;
+            font-style: italic;
+            font-size: 38px;
+            margin-top: 5px;
+        }
+        .wish h2:hover{
+            font-size:42px;
+            color: #29275f;
+            cursor: pointer;
+            transition:1s;
+
+
+        }
+
+        .wish p {
+            max-width: 600px;
+            margin: 20px auto;
+            color: #484675;
+            line-height: 1.7;
+        }
+
+        .section {
+            width: 90%;
+            margin: 50px auto;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .title h1 {
+            font-family: Georgia, serif;
+            color: #29275f;
+            font-size: 35px;
+        }
+
+        .title p {
+            color: #77739a;
+            margin-top: 10px;
+            letter-spacing: 2px;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .card {
+            width: 260px;
+            padding: 12px;
+            text-align: center;
+            border: 2px solid #f2a8c5;
+            border-radius: 20px;
+            background: #fff2f7;
+            animation: change 5s infinite alternate;
+            transition: 0.4s;
+        }
+
+        .card:hover {
+            transform: translateY(-15px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 14px;
+        }
+
+        .card h3 {
+            color: #29275f;
+            font-family: Georgia, serif;
+            margin-top: 15px;
+            font-size: 18px;
+        }
+
+        .card p {
+            margin-top: 10px;
+            color: #77739a;
+            font-size: 14px;
+        }
+
+        .years {
+            display: inline-block;
+            background: #f5c6da;
+            color: #453461;
+            padding: 7px 18px;
+            border-radius: 20px;
+            margin-top: 12px;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        @keyframes change {
+
+            0% {
+                border-color: #f2a8c5;
+                background: #fff2f7;
+                box-shadow: 0 5px 15px #f4cadb;
+            }
+
+            50% {
+                border-color: #a9cfee;
+                background: #f1f8ff;
+                box-shadow: 0 5px 20px #c2dff5;
+            }
+
+            100% {
+                border-color: #a9dfcf;
+                background: #f1fff9;
+                box-shadow: 0 5px 20px #c5e9dc;
+            }
+
+        }
+
+        .footer {
+            background: #38366f;
+            color: white;
+            text-align: center;
+            padding:30px;
+            margin-top: 20px;
+        }
+
+        .footer h2 {
+            font-family: Georgia, serif;
+            color: #ffd6e8;
+            margin-bottom: 15px;
+        }
+
+        .footer p {
+            font-size: 12px;
+            letter-spacing: 3px;
+        }
+
+        .footer h3 {
+            margin-top: 15px;
+            color: #ffd6e8;
+            font-style: italic;
+        }
+
+        @media (max-width: 900px) {
+
+            .card {
+                width: 280px;
+            }
+
+        }
+
+        @media (max-width: 600px) {
+
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .menu {
+                gap: 15px;
+            }
+
+            .wish {
+                padding: 50px 15px;
+            }
+
+            .wish h1 {
+                font-size: 36px;
+            }
+
+            .wish h2 {
+                font-size: 30px;
+            }
+
+            .card {
+                width: 100%;
+            }
+
+            .card img {
+                height: 220px;
+            }
+
+        }
+
+  </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+            <div class="logo">
+            <h2>🌸 Durga Puja</h2>
+       </div>
+
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </div>
+
+    <div class="wish">
+
+        <h3>॥ ~শারদ উৎসব~ ॥</h3>
+        <h1>East Medinipur</h1>
+        <h2>Durga Puja</h2>
+    <p>
+        Experience the beauty of Durga Puja through
+        tradition, devotion, creativity and community
+        celebrations of East Medinipur.
+    </p>
+    </div>
+
+
+    <div class="section">
+
+        <div class="title">
+
+            <h1>Our 20 Featured Pujas</h1>
+            <p>TRADITION • CULTURE • COMMUNITY</p>
+
+        </div>
+
+
+        <div class="cards">
+
+             <div class="card">
+                <img src="ramnagar.jpeg" alt="Durga Puja">
+                <h3>Ramnagar Sarbojanin</h3>
+                <p>📍 Ramnagar</p>
+                <p class="years">60 Years</p>
+            </div>
+
+             <div class="card">
+                <img src=" contaiNandanik.jpeg" alt="Durga Puja">
+                <h3>Contai Nandanik</h3>
+                <p>📍 Contai</p>
+                <p class="years">22 Years</p>
+             </div>
+
+             <div class="card">
+                <img src="Digha Community Puja.jpeg" alt="Durga Puja">
+                <h3>Digha Community Puja</h3>
+                <p>📍 Digha</p>
+                <p class="years">25 Years</p>
+            </div>
+
+            <div class="card">
+                <img src="Hazramore Maitribhumi.jpg" alt="Durga Puja">
+                <h3>Hazramore Maitribhumi</h3>
+                <p>📍 Contai</p>
+                <p class="years">20 Years</p>
+            </div>
+
+            <div class="card">
+                <img src="Contai Youth Guild Club.jpeg" alt="Durga Puja">
+                <h3>Contai Youth Guild Club</h3>
+                <p>📍 Contai</p>
+                <p class="years">39 Years</p>
+            </div>
+
+            <div class="card">
+                <img src="Haldia City Centre.jpeg" alt="Durga Puja">
+                <h3>Haldia City Centre</h3>
+                <p>📍 Haldia</p>
+                <p class="years">11 Years</p>
+            </div>
+
+            <div class="card">
+                <img src="Contai Chowrangi  Club.jpg" alt="Durga Puja">
+                <h3>Contai Chowrangi Club</h3>
+                <p>📍 Contai</p>
+                <p class="years">30 Years</p>
+            </div>
+
+            <div class="card">
+                <img src="Mudiali club.jpg" alt="Durga Puja">
+                <h3>Mudiali club Durgotsav</h3>
+                <p>📍Kolkata</p>
+                <p class="years">45 Years</p>
+            </div>
+
+            <div class="card">
+                <img src="bagbazar-sarbojanin-durgotsav.jpg" alt="Durga Puja">
+                <h3>Bagbazar Sarbojanin </h3>
+                <p>📍North Kolkata</p>
+                <p class="years">50 Years</p>
+            </div>
+
+            <div class="card">
+                <img src="Tamluk Sarbojanin.jpeg" alt="Durga Puja">
+                <h3>Tamluk Sarbojanin</h3>
+                <p>📍 Tamluk</p>
+                <p class="years">75 Years</p>
+            </div>
+
+            <div class="card">
+                <img src="Panskura Community Puja.jpeg" alt="Durga Puja">
+                <h3>Panskura Community Puja</h3>
+                <p>📍 Panskura</p>
+                <p class="years">40 Years</p>
+            </div>
+
+            <div class="card">
+                <img src="Mahishadal Rajbari.jpg" alt="Durga Puja">
+                <h3>Mahishadal Rajbari</h3>
+                <p>📍 Mahishadal</p>
+                <p class="years">100 Years</p>
+            </div>
+
+            <div class="card">
+                <img src="Chetla Agrani Club.jpeg" alt="Durga Puja">
+                <h3>Chetla Agrani Club</h3>
+                <p>📍Chetla,South Kolkata</p>
+                <p class="years">67 Years</p>
+            </div>
+
+           
+            <div class="card">
+                <img src="Suruchi Sangha.jpeg" alt="Durga Puja">
+                <h3>Suruchi Sangha</h3>
+                <p>📍 New Alipore</p>
+                <p class="years">74 Years</p>
+            </div>
+
+
+          <div class="card">
+              <img src="Sreebhumi Sporting Club.jpeg" alt="Durga Puja">
+              <h3>Sreebhumi Sporting Club</h3>
+              <p>📍 Lake Town</p>
+              <p class="years">54 Years</p>
+           </div>
+
+
+         <div class="card">
+              <img src="Ekdalia Evergreen Club.jpeg" alt="Durga Puja">
+              <h3>Ekdalia Evergreen Club</h3>
+              <p>📍 Ballygunge</p>
+              <p class="years">83+ Years</p>
+         </div>
+
+
+          <div class="card">
+              <img src="Deshapriya Park.jpeg" alt="Durga Puja">
+              <h3>Deshapriya Park Durgotsav</h3>
+              <p>📍 Deshapriya Park, Kolkata</p>
+              <p class="years">88 Years</p>
+           </div>
+
+
+           <div class="card"> 
+             <img src="Tridhara Sammilani.jpeg" alt="Durga Puja">
+             <h3>Tridhara Sammilani</h3>
+             <p>📍 Kalighat</p>
+             <p class="years">76 Years</p>
+            </div>
+
+
+              <div class="card">
+                  <img src="Santosh Mitra Square.jpeg" alt="Durga Puja">
+                  <h3>Santosh Mitra Square</h3>
+                  <p>📍 Lebutala, Kolkata</p>
+                  <p class="years">90+ Years</p>
+             </div>
+             
+      <div class="card">
+          <img src="Barisha Club.jpeg" alt="Durga Puja">
+          <h3>Barisha Club</h3>
+          <p>📍 Barisha, Behala, Kolkata</p>
+          <p class="years">55 Years</p>
+          </div>
+
+         </div>
+     </div>
+
+
+      <div class="footer">
+         <h2>🌸 শুভ শারদীয়া 🌸</h2>
+         <p>TRADITION • CULTURE • COMMUNITY</p>
+         <h3>Developed by Arbina</h3>
+      </div>
+</div>
+</body>
+</html>
